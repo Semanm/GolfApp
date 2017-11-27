@@ -1,0 +1,31 @@
+﻿<Window x:Class="golfApp1._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:golfApp1._0"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="466.5" Width="738" Icon="media/PGATOUR_Logo.png">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Title" Content="PGA TOUR Golf App" Margin="249,38,0,0" Width="236" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="24" Height="42" Grid.Column="1"/>
+        <DataGrid x:Name="loadData" HorizontalAlignment="Left" Margin="13,136,0,0" VerticalAlignment="Top" Height="277" Width="576" Grid.Column="1" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Button x:Name="add" Content="Add" HorizontalAlignment="Left" Margin="600,136,0,0" VerticalAlignment="Top" Width="118" Height="42" Grid.Column="1"/>
+        <Button x:Name="delete" Content="Delete" HorizontalAlignment="Left" Margin="600,230,0,0" VerticalAlignment="Top" Width="118" Height="42" Grid.Column="1"/>
+        <Button x:Name="update" Content="Update" HorizontalAlignment="Left" Margin="600,183,0,0" VerticalAlignment="Top" Width="118" Height="42" Grid.Column="1"/>
+        <Button x:Name="save" Content="Save" HorizontalAlignment="Left" Margin="600,277,0,0" VerticalAlignment="Top" Width="118" Height="42" Grid.Column="1"/>
+        <Button x:Name="query" Content="Query" HorizontalAlignment="Left" Margin="600,324,0,0" VerticalAlignment="Top" Width="118" Height="42" Grid.Column="1"/>
+        <Button x:Name="show" Content="Show" HorizontalAlignment="Left" Margin="600,371,0,0" VerticalAlignment="Top" Width="118" Height="42" Grid.Column="1"/>
+        <Canvas HorizontalAlignment="Left" Height="100" Margin="6,10,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1">
+            <Canvas.Background>
+                <ImageBrush ImageSource="media/pgatour.png"/>
+            </Canvas.Background>
+        </Canvas>
+
+
+    </Grid>
+
+</Window>

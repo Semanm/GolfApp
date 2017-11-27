@@ -1,0 +1,34 @@
+﻿<Window x:Class="golfApp1._0.Splash"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:golfApp1._0"
+        mc:Ignorable="d"
+        Title="Splash" Height="612" Width="820.5" Icon="media/PGATOUR_Logo.png" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="media/PGATOUR_Logo.png" Stretch="None"/>
+    </Window.Background>
+    <Grid MouseLeftButtonDown="move">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Button Margin="336,94,444,478" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="White" Click="Button_Minimize">
+            <Button.Background>
+                <ImageBrush ImageSource="media/minimize.png" />
+            </Button.Background>
+        </Button>
+        <Button Width="40" Height="40" Margin="291,94,489,478" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Button_Exit" RenderTransformOrigin="-2.925,1.338">
+            <Button.Background>
+                <ImageBrush ImageSource="media/Button-Delete-icon.png"/>
+            </Button.Background>
+        </Button>
+
+        <TextBox Margin="566,297,0,264" TextWrapping="Wrap" Name="UN" Text="User Name" FontSize="36" RenderTransformOrigin="0.968,0.577" TextChanged="UN_TextChanged"></TextBox>
+
+        <PasswordBox Margin="566,353,0,209"  Name="PSWD" FontSize="36"></PasswordBox>
+        <Button x:Name="LogIn" Content="Log In" HorizontalAlignment="Left" Margin="566,408,0,0" VerticalAlignment="Top" Width="176" Height="46" FontSize="24" Click="LogIn_Click"/>
+
+
+    </Grid>
+</Window>
